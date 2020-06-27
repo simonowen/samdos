@@ -1,5 +1,5 @@
 
-; boots at &8000, normally at &4000 
+; boots at &8000, normally at &4000
 
                org gnd+&4000
                dump gnd.bank,&0000
@@ -124,7 +124,7 @@ nstat:         defb 1
 vers:          defb 20
 
 size1:         defb 80
-size2:         defb 0 
+size2:         defb 0
 szea:          defb 12
 lfeed:         defb 1
 lmarg:         defb 0
@@ -259,7 +259,7 @@ page2:         defb &ff
 
 nstr3:         defb &ff
                defb &ff,&ff,&ff,&ff,&ff,&ff,&ff,&ff,&ff,&ff,&ff,&ff,&ff,&ff
-               
+
 uifa:          defb &13
                defm "samdos2                  "
                defb &ff,&ff,&ff,&ff,&ff
@@ -273,7 +273,7 @@ uifa:          defb &13
                defb &ff
                defb &ff
                defb &00,&00,&00,&00,&00,&00,&00,&00
-               
+
 difa:          defb 0
                defb &00,&80,&43,&00,&02,&4c,&44,&03,&42,&2c,&30,&00,&80,&44,&00,&02
                defb &4c,&44,&03,&43,&2c,&41,&00,&80,&45,&00,&03,&41,&44,&44,&05,&48
@@ -527,4 +527,3 @@ setbit:        push af
                defw var2+&01c3
                pop af
                ret
-

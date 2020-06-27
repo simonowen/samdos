@@ -752,7 +752,7 @@ fndflx3:       ld a,(svdpt)
                call clrrpt
                inc (ix+rpth)
                jr fndflx2
-               
+
 fndflx4:       ld de,(svtrs)
                call isect
                jr nz,fndflx1
@@ -953,4 +953,3 @@ gdifa:         call point
                inc hl
                ld e,(hl)
                ret
-

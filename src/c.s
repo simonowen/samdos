@@ -1571,4 +1571,3 @@ instp:         ld c,stpin
 
 step:          call sadc
                jp stpdel
-

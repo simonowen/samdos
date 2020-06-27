@@ -149,4 +149,3 @@ dram:          equ fsa+256
 fndfr:         equ dram+1024
 fndts:         equ fndfr+1
 next:          equ fndts+2
-

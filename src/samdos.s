@@ -6,7 +6,6 @@
         include "e.s"
         include "f.s"
         include "h.s"
-        
-        defs &782
-        defb &00        
 
+        defs &782
+        defb &00

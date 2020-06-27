@@ -215,7 +215,7 @@ autnam:        defb 1
 init:          nop
 initx:         ld a,&95   ; LOAD
                call nrwr
-               defw &5b74 ; Current Basic command.                
+               defw &5b74 ; Current Basic command.
 
 
 ;LOOK FOR AN AUTO FILE

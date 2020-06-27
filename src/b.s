@@ -2,18 +2,12 @@
 ; boots at &8000, normally at &4000
 
                org gnd+&4000
-               dump gnd.bank,&0000
+               dump gnd.bank,&0000+fhsize
 
 comm:          equ 224
 trck:          equ 225
 sect:          equ 226
 dtrq:          equ 227
-
-               defb 3
-               defw 0
-               defw 0
-               defw 0
-               defw 0
 
                ld hl,&8000+510
                ld de,&0402
@@ -110,7 +104,7 @@ dos8:          dec hl
 
                ret
 
-               org $ - &4000
+               org $ - &4000 + fhsize
 
 dvar:          equ $
 

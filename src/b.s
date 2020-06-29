@@ -108,9 +108,9 @@ dos8:          dec hl
 
 dvar:          equ $
 
-rbcc:          defb 7
+rbcc:          defb 0
 traks1:        defb 128+80
-traks2:        defb 0
+traks2:        defb 128+80
 stprat:        defb 0
 stprt2:        defb 0
 chdir:         defb &20
